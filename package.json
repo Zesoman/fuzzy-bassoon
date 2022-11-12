@@ -1,0 +1,28 @@
+{
+  "name": "fuzzy-bassoon",
+  "version": "1.0.0",
+  "description": "Automation test task for Gemicle",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zesoman/fuzzy-bassoon.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "author": "Zesoman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zesoman/fuzzy-bassoon/issues"
+  },
+  "homepage": "https://github.com/Zesoman/fuzzy-bassoon#readme",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^11.0.1",
+    "esbuild": "^0.15.13"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0"
+  }
+}
