@@ -17,6 +17,9 @@
     "url": "https://github.com/Zesoman/fuzzy-bassoon/issues"
   },
   "homepage": "https://github.com/Zesoman/fuzzy-bassoon#readme",
+  "scripts": {
+    "test": "npx cypress run"
+  },
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "cypress": "^11.0.1",

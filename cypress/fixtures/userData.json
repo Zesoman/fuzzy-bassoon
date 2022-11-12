@@ -1,6 +1,7 @@
 {
   "name": "Awsome Tester",
   "email": "awsome.tester@qa.team",
-  "phone": "0449883723",
+  "phone": "0979883723",
+  "invalidPhone": "0449883723",
   "password": "Qwert!1234"
 }
