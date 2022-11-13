@@ -1,4 +1,4 @@
-Feature: Cart  
+Feature: Cart
 
   Scenario: User is able to add item to the cart
     Given User logged in with phone:"0979883723", password:"Qwert!1234", home page opend

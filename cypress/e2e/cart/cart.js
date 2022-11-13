@@ -21,6 +21,7 @@ Then("Item {string} should be added to the cart", (item) => {
   cy.get(".del__btn").click();
   cy.get(".del__delete").click();
   cy.get(".empty-cart").should("be.visible");
+  cy.get(".empty-cart").should("contain", "Ви нічого не обрали.");
 });
 
 Given("User logged in with phone:{string}, password:{string}, item {string} added to the cart", (phone, password, item) => {
@@ -42,6 +43,7 @@ When("User clicks remove button", () => {
 
 Then("Item {string} should be removed from the cart", () => {
   cy.get(".empty-cart").should("be.visible");
+  cy.get(".empty-cart").should("contain", "Ви нічого не обрали.");
 });
 
 When("User clicks Proceed to checkout button", () => {
@@ -52,7 +54,10 @@ Then("Checkout page should open", () => {
   cy.url().should("contain", "https://my.can.ua/checkout");
   cy.get("#btn-order").should("contain", "Замовлення підтверджую")
   // testing data removal
-  cy.get(".icon2-cart-icon.icon").click();
-  cy.get(".item__del.del").click();
-  cy.contains(".del__delete", "Видалити з кошику").click({ force: true });
+  cy.get(".main-logo").click();
+  cy.get("#header-cart").click();
+  cy.get(".del__btn").click({force: true});
+  cy.get(".del__delete").click({force: true});
+  cy.get(".empty-cart").should("be.visible");
+  cy.get(".empty-cart").should("contain", "Ви нічого не обрали.");
 });
