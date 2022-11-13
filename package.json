@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Zesoman/fuzzy-bassoon#readme",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run --browser chrome"
   },
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
