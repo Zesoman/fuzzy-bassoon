@@ -3,5 +3,6 @@
   "email": "awsome.tester@qa.team",
   "phone": "0979883723",
   "invalidPhone": "0449883723",
-  "password": "Qwert!1234"
+  "password": "Qwert!1234",
+  "storeItem": "TUF-RTX4090-O24G-GAMING"
 }
